@@ -1,0 +1,7 @@
+depth,minimax_nodes,alpha_beta_nodes,alpha_beta_pruned,minimax_time_seconds,alpha_beta_time_seconds
+2,13,9,2,0.0,0.0
+3,40,20,4,0.001,0.0
+4,121,57,18,0.0,0.001
+5,418,144,27,0.002,0.001
+6,1507,383,36,0.007,0.002
+7,4774,678,280,0.015,0.003

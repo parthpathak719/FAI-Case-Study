@@ -1,0 +1,6 @@
+case,depth,alpha_beta_result,alpha_beta_turns,alpha_beta_nodes,alpha_beta_pruned,greedy_result,greedy_turns,greedy_nodes
+Working Case 1,6,THIEF_WINS,52,17174,4387,GUARDS_WIN,24,80
+Working Case 2,6,GUARDS_WIN,10,3659,823,GUARDS_WIN,8,26
+Edge Case 1 (trapped),4,GUARDS_WIN,4,45,11,GUARDS_WIN,5,14
+Edge Case 2 (depth 2),2,GUARDS_WIN,33,338,33,THIEF_WINS,34,104
+Edge Case 2 (depth 8),8,THIEF_WINS,94,89052,18432,THIEF_WINS,34,104
