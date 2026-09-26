@@ -87,6 +87,14 @@ collected), and the exit (green).
 ```
 museum_heist/
   main.py                     command line entry point (play, compare, visualize, experiments)
+  requirements.txt            Python package dependencies (matplotlib, pillow, numpy)
+  test_setup.py                scratch workbench used during development to try things out
+                               quickly before they were moved into src/. Not required to run
+                               the project, kept only as a development record.
+  find_horizon_map.py          one-off utility script used to search for guard start positions
+                               that produce a genuine horizon effect (a result that flips between
+                               a shallow and a deep search on the same map). Used to design
+                               edge_case_2_horizon.txt and is not needed to run the project.
   maps/                       text map files, see Inputs above
   src/
     world.py                  loads a map file into a GridWorld, tracks walls and legal moves
