@@ -1,0 +1,43 @@
+Edge case 2 trace, alpha-beta depth 2 vs greedy (same map, same start)
+Alpha-beta result: GUARDS_WIN after 33 turns
+Greedy result:     THIEF_WINS after 34 turns
+
+First divergence at turn 4 (GUARD1 to move).
+Positions before the move: thief (1, 3), guard1 (2, 7), guard2 (1, 1)
+Alpha-beta plays DOWN, greedy plays UP.
+Over the first 33 turns the two games differ on 1 of 11 thief moves and 7 of 22 guard moves.
+
+Move-by-move (turn, agent, alpha-beta move | greedy move, thief position before move)
+  0  THIEF  RIGHT  | RIGHT  (1, 1)
+  1  GUARD1 DOWN   | DOWN   (1, 2)
+  2  GUARD2 UP     | UP     (1, 2)
+  3  THIEF  RIGHT  | RIGHT  (1, 2)
+  4  GUARD1 DOWN   | UP     (1, 3)   <-- differs
+  5  GUARD2 RIGHT  | RIGHT  (1, 3)
+  6  THIEF  DOWN   | DOWN   (1, 3)
+  7  GUARD1 DOWN   | DOWN   (2, 3)
+  8  GUARD2 RIGHT  | RIGHT  (2, 3)
+  9  THIEF  DOWN   | DOWN   (2, 3)
+ 10  GUARD1 DOWN   | UP     (3, 3)   <-- differs
+ 11  GUARD2 DOWN   | DOWN   (3, 3)
+ 12  THIEF  DOWN   | DOWN   (3, 3)
+ 13  GUARD1 DOWN   | DOWN   (4, 3)
+ 14  GUARD2 DOWN   | DOWN   (4, 3)
+ 15  THIEF  DOWN   | DOWN   (4, 3)
+ 16  GUARD1 DOWN   | UP     (5, 3)   <-- differs
+ 17  GUARD2 DOWN   | DOWN   (5, 3)
+ 18  THIEF  DOWN   | DOWN   (5, 3)
+ 19  GUARD1 DOWN   | DOWN   (6, 3)
+ 20  GUARD2 DOWN   | DOWN   (6, 3)
+ 21  THIEF  DOWN   | DOWN   (6, 3)
+ 22  GUARD1 DOWN   | UP     (7, 3)   <-- differs
+ 23  GUARD2 DOWN   | DOWN   (7, 3)
+ 24  THIEF  DOWN   | DOWN   (7, 3)
+ 25  GUARD1 LEFT   | DOWN   (8, 3)   <-- differs
+ 26  GUARD2 DOWN   | DOWN   (8, 3)
+ 27  THIEF  DOWN   | DOWN   (8, 3)
+ 28  GUARD1 LEFT   | UP     (9, 3)   <-- differs
+ 29  GUARD2 DOWN   | DOWN   (9, 3)
+ 30  THIEF  WAIT   | RIGHT  (9, 3)   <-- differs
+ 31  GUARD1 LEFT   | DOWN   (9, 3)   <-- differs
+ 32  GUARD2 DOWN   | DOWN   (9, 3)

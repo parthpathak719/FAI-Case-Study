@@ -1,0 +1,5 @@
+matchup,depth,maps,thief_win_pct,guard_win_pct,timeout_pct,avg_turns
+Thief AB vs Guards AB,4,30,13.3,83.3,3.3,26.3
+Thief AB vs Guards Greedy,4,30,10.0,16.7,73.3,50.7
+Thief Greedy vs Guards AB,4,30,6.7,93.3,0.0,18.2
+Thief Greedy vs Guards Greedy,4,30,6.7,46.7,46.7,38.0
